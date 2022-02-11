@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<body>
+<select id="456" onchange="f1()">
+<option>normal</option>
+<option>reacangle</option>
+<option>square</option>
+<option>circle <option>
+</select>
+<br/><br/>
+<img src="IMG_7424.JPG" id="789" width="450"/>
+<script>
+function f1() {
+var totObj = document.getElementById("456");
+var imgObj = document.getElementById("789");
+
+
+switch(totObj.value)
+{
+case"normal":
+		  imgObj.style.width="500";
+		  imgObj.style.height="500";
+		  imgObj.style.borderRadius="0px";
+		  break;
+case"reacangle":
+           //code;
+		   imgObj.style.width="300";
+		  imgObj.style.height="300";
+		  imgObj.style.borderRadius="0px";
+		  break;
+case"square":
+           //code;
+		   imgObj.style.width="600";
+		  imgObj.style.height="600";
+		  imgObj.style.borderRadius="0px";
+           break;
+case"circle":
+           //code;
+		    imgObj.style.width="400";
+		    imgObj.style.height="400";
+            imgObj.style.borderRadius="500px";		  
+}
+}
+</script>
+</body>
+</html>

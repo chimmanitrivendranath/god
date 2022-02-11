@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+img {
+border-color:red;
+border: 5px dotted blue;
+}
+* {
+color:blue;
+
+}
+</style>
+</head>
+<body>
+<h1> IMAGES SHAPES STYLES </h1>
+<select id="456" onchange="h1()">
+<option>Normal</option>
+<option>Rectangle</option>
+<option>Square</option>
+<option>Circle</option>
+</select>
+<br/><br/><br/>
+<img src="_DSC2997_1.JPG" id="123" width="300"/>
+<br/>
+</body>
+<script>
+function h1()  {
+var phaObj = document.getElementById("123");
+var shaObj = document.getElementById("456");
+    
+switch (shaObj.value)
+{
+case"Rectangle":
+              // code
+               alert("Select Rectangle Shape");
+               phaObj.style.width="700px";
+               phaObj.style.height="450px";
+			   phaObj.style.borderRadius="0px";
+                break;
+case"Square":
+               //code
+              alert("Select Suuare Shape");
+              phaObj.style.width="500px";
+              phaObj.style.height="500px";
+			  phaObj.style.borderRadius="0px";
+              break;
+ case"Circle":
+              // code
+              alert("Select Circle Shape");
+              phaObj.style.width="500px";
+              phaObj.style.height="500px";
+			  phaObj.style.borderRadius="1000px";
+              break;
+}
+}
+</script>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body>
+NAME : <input type="text"id="34"/>
+<br/><br/>
+LASTNAME: <input type="text" id="56"/>
+<br/><br/>
+SARNAME : <input type="text" id="78"/>
+<br/><br/>
+<input type="button" value="TOTALNAME" onclick="tt()"/>
+<p id="12"> </p>
+<script>
+function tt() {
+var abObj = document.getElementById("12");
+var cdObj = document.getElementById("34");
+var efObj = document.getElementById("56");
+var ghObj = document.getElementById("78");
+
+name =cdObj.value;
+last =efObj.value;
+sar =ghObj.value;
+
+
+
+
+abObj.innerHTML = "Well Come TO " + name + last + sar ;
+}
+
+</script>
+</body>	
+</html>

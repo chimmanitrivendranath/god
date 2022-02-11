@@ -1,0 +1,66 @@
+<html>
+<head>
+</head>
+<body>
+<h1> PHOTOS SHAPES </h1>
+<hr/>
+<select id="654" onchange="v1()">
+<option>normal</option>
+<option>rectangle</option>
+<option>square</option>
+<option>circle</option>
+<option>popular</option>
+<option>closeimage</option>
+</select>
+
+<br/><br/><br/>
+<img src="tamanna.JPG"   id="987" width="700"/>
+
+<script>
+function v1() {
+var imObj = document.getElementById("987");
+var totObj = document.getElementById("654");
+switch (totObj.value)
+{
+ case"normal":
+       //code;
+	   imObj.style.width="1000";
+	   imObj.style.height="500";
+	   imObj.style.borderRadius="0";
+       break;
+ case"rectangle":
+     //code;
+	 imObj.style.width="700";
+	 imObj.style.height="500";
+	 imObj.style.borderRadius="0";
+	 break;
+ case"square":
+     // code;
+	 imObj.style.width="500";
+	 imObj.style.height="500";
+	 imObj.style.borderRadius="0";
+	 break;
+ case"circle":
+     //code;
+	 imObj.style.width="400";
+	 imObj.style.height="400";
+	 imObj.style.borderRadius="300px";
+	 break;
+case"popular":
+     //code;
+	 imObj.style.width="750";
+	 imObj.style.height="750";
+	 imObj.style.borderRadius="0";
+	 break;
+case"closeimage":
+    //code;
+	imObj.style.width="800";
+	imObj.style.heighr="1000";
+	imObj.style.borderRadius="0";
+	break;
+
+}
+}
+</script>
+</body>
+</html>

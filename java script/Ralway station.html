@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+* {
+color:blue;
+}
+</style>
+<link href="bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<h1 style="text-align:center;"> Ralway station booking </h1>
+<hr/>
+<center>
+ Slelct SourceStation:
+<select id="123"> 
+<option>---Select Station--- </option> 
+<option>Hyderabad</option>
+<option>Jaipur</option>
+<option>Bengaluru</option>
+<option>New Delhi</option>
+<option>Goa</option>
+<option>Varanasi</option>
+<option>Mumbai</option>
+<option>Kolkata</option>
+<option>Champhai</option>
+<option>Chennai</option>
+</select>
+</tr>
+<br/><br/>
+Sleleat Destination station :
+<select id="456">
+<option>---Select Station--- </option>
+<option>Hyderabad</option>
+<option>Jaipur</option>
+<option>Bengaluru</option>
+<option>New Delhi</option>
+<option>Goa</option>
+<option>Varanasi</option>
+<option>Mumbai</option>
+<option>Kolkata</option>
+<option>Champhai</option>
+<option>Chennai</option>
+</select>
+</center>
+<br/><br/>
+<center>
+<input class="btn btn-warning" style="box-shadow:0 0 20px red, 0 0 40px gold, 0 0 60px blue;" type="button" onclick="f1()" value="validate"/>
+<br/> <br/> <br/>
+<p id="kaka"> </p>
+</center>
+<script>
+function f1(){
+var lamObj = document.getElementById("kaka");
+var laObj = document.getElementById("123");
+var labObj = document.getElementById("456");
+
+    
+if (laObj.value == labObj.value)
+{
+lamObj.innerHTML ="SUCCESSFULL JOURNEY COMPLECT";
+lamObj.style.color="white";
+lamObj.style.backgroundColor="rgb(180,100,150)";
+lamObj.style.width="300";
+lamObj.style.textAlign="center";
+}
+else 
+{
+lamObj.innerHTML ="UNSUCCESSFULL JOURNEY COMPLECT";
+lamObj.style.color="white";
+lamObj.style.backgroundColor="rgb(80,200,150)";
+lamObj.style.width="320";
+lamObj.style.textAlign="center";
+}
+}
+</script>
+</body>
+</html>

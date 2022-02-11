@@ -1,0 +1,32 @@
+<html>
+<head>
+</head>
+<body> 
+PASSWORD : <input type="password" id="43"/>
+<br/><br/>
+RETYPE PASSWORD : <input type="password" id="65"/>
+<br/><br/>
+<input type="button" value="VALIDATE" onclick="vv()"/>
+<p id="21"></p>
+</body>
+<script>
+function vv() { 
+var baObj = document.getElementById("21");
+var dcObj = document.getElementById("43");
+var feObj = document.getElementById("65");
+
+if(dcObj.value==feObj.value)
+{
+alert("PASSWORD TRUE");
+baObj.innerHTML ="PASSWORD TRUE";
+baObj.style.color="green";
+}
+else
+{
+alert("PASSWORD FLASE");
+baObj.innerHTML ="PASSWORD IS FLASE";
+baObj.style.color="red";
+} 
+}
+</script>
+</html>

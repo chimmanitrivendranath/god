@@ -1,0 +1,38 @@
+<html>
+<head>
+</head>
+<body>
+<fieldset>
+<legend> TRIVENDRANATH HOTAL  </legend>
+<table>
+<tr><td>Product Name:</td> <br/>
+<td><input id="1"type="text"/></td></tr>
+<tr><td>Unit Price:</td>
+<td><input id="2"type="text"/></td></tr>
+<tr><td>Quantity:</td>
+<td><input id="3" type="text"/></td></tr>
+</table>
+<br/>
+<input type="button" value="GET TOTAL AMOUNT" onclick="t()"/>
+</fieldset>
+
+<p id="tr"> </p>
+<script>
+function t() {
+var wellObj = document.getElementById("tr");
+    
+var p1Obj = document.getElementById("1");	
+    name = p1Obj.value; 
+var p2Obj = document.getElementById("2");
+    paru = p2Obj.value;
+var p3Obj = document.getElementById("3");
+    peesu = p3Obj.value;
+wellObj.innerHTML = " HOTAL TOTAL BILL " + name + paru + peesu;
+}
+</script>
+
+
+
+
+</body>
+</html>

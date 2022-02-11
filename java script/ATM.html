@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+table
+{
+border:2px solid red;
+padding:25px;
+background-color:rgb(120,52,180);
+}
+*
+{
+color:white;
+font-size:15
+px;
+}
+#tt{
+color:green;
+box-shadow:0 0 10px yellow,0 0 40px yellow,0 0 80px yellow;
+
+}
+</style>
+</head>
+<body>
+<center>
+<table>
+<tr> 
+<td>CARDNAME*</td>
+<td> 
+<select>
+<option>---SELECTED---</option>
+<option>VISA</option>
+<option>RUPAY</option>
+<option>MARTRO</option>
+<option>MASTER</option>
+</select></td></tr>
+<tr>
+<td>CARDNUNBER*</td> 
+<td><input type="number" min="1" and max="5"/>
+<input type="number" min="1" and max="5"/>
+<input type="number" min="1" and max="5"/>
+<input type="number" min="1" and max="5"/></td></tr>
+<tr><td></td><td>(please enter your card number without any spaces)</td></tr>
+<tr><td>EXPIRY DATE*</td> 
+<td><input type="date"/></td></tr>
+<tr><td></td><td>(please entere expiry date provide card nunber)</td></tr>
+<tr><td>CVV2/CVC2*</td>
+<td><input type="text"/></td></tr>
+<tr><td></td><td>((CVV2/CVC2 is the three digit security code printed on the back side card)</td></tr>
+<tr><td>NAME ON THE CARD*</td> 
+<td><input type="text"/></td></tr>
+<tr><td></td><td>(please enter your name spefied on the card)</td></tr>
+<tr><td>ATM PIN*</td> 
+<td><input type="number" min="1" max="3"</td></tr>
+<tr><td> PURCHASE AMOUNT *</td> 
+<td>INT 67.0$</td> </tr>
+<tr><td></td> <td><input id="tt" type="button" value="PAY"/></td> </tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+</head>
+<body>
+<select id="258" onchange="hh()">
+<option>200*200=Shape</option>
+<option>300*300=Shape</option>
+<option>400*400=Shape</option>
+<option>500*500=Shape</option>
+<option>600*600=Shape</option>
+</select>
+<br/> <br/>
+<center>
+<img src="_DSC2997_1.JPG" id="369" width="500"/>
+</center>
+<script>
+var srcObj = document.getElementById("369");
+var optObj = document.getElementById("258");
+function hh() {
+switch(optObj.value)
+{
+case"200*200=Shape":
+   //code;
+   srcObj.style.width="200";
+   srcObj.style.heigt="200";
+   break;
+case"300*300=Shape":
+    //code
+	srcObj.style.width="300";
+   srcObj.style.heigt="300";
+    break;
+case"400*400=Shape":
+    //code
+	srcObj.style.width="400";
+   srcObj.style.heigt="400";
+    break;
+case"500*500=Shape":
+     //code
+	 srcObj.style.width="500";
+   srcObj.style.heigt="500";
+      break;
+case"600*600=Shape":
+      //code
+	  srcObj.style.width="600";
+      srcObj.style.heigt="600";
+       break;	  
+}
+}
+</script>
+</body>
+</html>
